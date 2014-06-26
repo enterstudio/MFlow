@@ -9,13 +9,17 @@ let
             src = mflowSrc;
             version = mflowSrc.gitTag;
             isLibrary = true;
+            isExecutable = true;
             buildDepends = with haskellPackages; [
+                aws persistent persistentSqlite persistentTemplate
+                pwstoreFast safecopy shakespeare
+                tcacheAWS acidState waiExtra hamlet
                 blazeHtml blazeMarkup caseInsensitive clientsession conduit
                 conduitExtra extensibleExceptions httpTypes monadloc mtl parsec
                 random RefSerialize stm TCache text time transformers utf8String
                 vector wai warp warpTls Workflow
                 ];
-            buildTools = with haskellPackages; [ cpphs ];
+            buildTools = with haskellPackages; [ cpphs monadlocPp ];
 
             meta = {
                 description = "stateful, RESTful web framework";
