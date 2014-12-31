@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/agocorona/MFlow.png?branch=master)](https://travis-ci.org/agocorona/MFlow)
+[![Build Status](https://travis-ci.org/tomberek/MFlow.png?branch=master)](https://travis-ci.org/tomberek/MFlow)
 
 MFlow is am application server and Web Framework for stateful and persistent Web applications that run in a navigation monad with backtracking that provides services of routing and state persistence. 
 
